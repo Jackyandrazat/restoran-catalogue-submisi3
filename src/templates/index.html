@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Resotran Katalog">
+  <meta name="theme-color" content="#1C6758"/>
+  <link rel="icon" href="./food.png">
+  <link rel="manifest" href="./app.webmanifest">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <title>Restaurant Apps Starter Project</title>
+</head>
+<body onload="hide_loading();">
+<div class="loading overlay">
+  <div class="lds-ripple"><div></div><div></div></div>
+</div>
+  <a href="#mainContent" class="skip-link">Go To Main Content</a>
+  
+  <header-bar></header-bar>
+
+  <hero-bar></hero-bar>
+  
+  <main-bar></main-bar>
+  
+  <footer-bar></footer-bar>
+
+  
+  <script>
+    const fadeTarget = document.querySelector('.loading');
+
+    function show_loading() {
+      fadeTarget.style.display = 'block';
+    }
+    function hide_loading() {
+      fadeTarget.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
